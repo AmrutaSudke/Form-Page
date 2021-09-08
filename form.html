@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Form Page
+    </title>
+    <style>
+        form {
+            border: 5px solid teal;
+            height: 100%;
+            width: 700px;
+            padding: 5px;
+            margin-left: 300px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        h1 {
+            color: chocolate;
+            background-color: darkcyan;
+        }
+
+        h1:hover {
+            color: white;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1> Student Informations</h1>
+        First Name : <input type="text" name="firstName" required /> <br> <br />
+        Last Name : <input type="text" name="lastName" required /> <br> <br />
+        Gender : <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br> <br />
+        Birthday: <input type="date" id="birthday" name="birthday" required> <br> <br />
+        Birthday (date and time): <input type="datetime-local" id="birthdaytime" name="birthdaytime"> <br> <br />
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required> <br> <br />
+        Birthday (month and year):<input type="month" id="bdaymonth" name="bdaymonth"> <br> <br />
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br> <br />
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30"> <br> <br />
+
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"> <br> <br />
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch" value="https://www.w3schools.com/" readonly>
+        <!-- <input type="submit" value="Submit"> --><br> <br />
+        <label="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" maxlength="10"> <br> <br />
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt"> <br> <br />
+
+            <!-- <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage"> <br> <br /> -->
+
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week"> <br> <br />
+
+            <label for="City">Choose a City :</label>
+            <select name="city" id="City ">
+                <option value="pune">Pune</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="Hydrabad">Hydrabad</option>
+                <option value="nagpur">Nagpur</option>
+
+            </select> <br /><br />
+
+            Password : <input type="password" name="password" required><br /><br />
+
+
+            Hobby : <input type="checkbox" name="hobby" value="play"> Play
+            <input type="checkbox" name="hobby" value="read"> Read
+            <input type="checkbox" name="hobby" value="travellng"> travellng
+            <input type="checkbox" name="hobby" value="driving"> driving <br><br>
+
+
+            Skils : <input list="skils" name="skils">
+            <datalist id="skils">
+                <option value="Html">
+                <option value="Css">
+                <option value="Javascript">
+                <option value="Angular">
+                <option value="React">
+            </datalist> <br> <br>
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <!-- <input type="submit" value="Send"> -->
+
+
+
+
+            <br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset value">
+
+
+    </form>
+</body>
+
+</html>
